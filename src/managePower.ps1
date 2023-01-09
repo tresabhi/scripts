@@ -18,7 +18,7 @@ If ((Get-WmiObject win32_battery).BatteryStatus -eq 2) {
   powercfg /setdcvalueindex SCHEME_CURRENT SUB_ENERGYSAVER ESBATTTHRESHOLD $BatterSaverThreshold
   powercfg /setactive scheme_current
   
-  Enable-PnpDevice -InstanceID $GPUID
+  Enable-PnpDevice -InstanceID $GPUID -Confirm:$false
 }
 else {
   # running on battery
@@ -30,5 +30,5 @@ else {
   powercfg /setactive scheme_current
   
   # WARNING: ONLY DISABLE THE GPU IF YOU HAVE DUAL INTEGRATED AND DISCRETE GRAPHICS
-  Disable-PnpDevice -InstanceID $GPUID
+  Disable-PnpDevice -InstanceID $GPUID -Confirm:$false
 }
