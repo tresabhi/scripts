@@ -9,3 +9,8 @@ These are scripts that I use on my computer. Feel free to fork them to your own 
 | Name          | Type       | Description                                                                           |
 | ------------- | ---------- | ------------------------------------------------------------------------------------- |
 | `managePower` | PowerShell | Toggles GPU, refresh rate, power plans, battery modes, etc. when on and off AC power. |
+
+## 🍤 Depencencies
+| Name                                           | Description                                  |
+| ---------------------------------------------- | -------------------------------------------- |
+| [QRes](https://sourceforge.net/projects/qres/) | A CLI tool to change various screen settings |
