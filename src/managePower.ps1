@@ -29,5 +29,6 @@ else {
   powercfg /setdcvalueindex SCHEME_CURRENT SUB_ENERGYSAVER ESBATTTHRESHOLD 100
   powercfg /setactive scheme_current
   
+  # WARNING: ONLY DISABLE THE GPU IF YOU HAVE DUAL INTEGRATED AND DISCRETE GRAPHICS
   Disable-PnpDevice -InstanceID $GPUID
 }
