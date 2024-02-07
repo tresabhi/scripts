@@ -6,7 +6,7 @@ $LowRefreshRate = 60
 $BatterSaverThreshold = 20
 
 $HighPowerPlan = '7ccda3ca-bcb1-4b50-b303-c44682ab3312'
-$LowPowerPlan = 'a7bcd875-2710-4c9c-8399-3388e4d16369'
+$LowPowerPlan = '381b4222-f694-41f0-9685-ff5bb260df2e'
 $GPUID = 'PCI\VEN_10DE&DEV_24DD&SUBSYS_88FD103C&REV_A1\4&33EB62B0&0&0008'
 
 If ((Get-WmiObject win32_battery).BatteryStatus -eq 2) {
