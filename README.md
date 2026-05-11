@@ -1,16 +1,11 @@
-# 🪄 Scripts
+# Useful Scripts
 
-![manage power ran in the terminal](https://i.imgur.com/q3PTSoe.png)
+Some scripts that I think deserve documentation.
 
-These are scripts that I use on my computer. Feel free to fork them to your own computers!
+## Spicetify With Flatpak Spotify
 
-## 📜 Script Descriptions
-
-| Name          | Type       | Description                                                                           |
-| ------------- | ---------- | ------------------------------------------------------------------------------------- |
-| `managePower` | PowerShell | Toggles GPU, refresh rate, power plans, battery modes, etc. when on and off AC power. |
-
-## 🍤 Depencencies
-| Name                                           | Description                                  |
-| ---------------------------------------------- | -------------------------------------------- |
-| [QRes](https://sourceforge.net/projects/qres/) | A CLI tool to change various screen settings |
+```bash
+sudo chmod a+wr /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/
+sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/Apps/
+spicetify upgrade
+```
