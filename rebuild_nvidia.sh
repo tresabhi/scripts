@@ -1,0 +1,1 @@
+sudo akmods --rebuild --force
